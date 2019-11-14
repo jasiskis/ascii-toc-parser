@@ -1,0 +1,5 @@
+{:deps {}
+ 
+ :aliases
+ {:test {:extra-paths ["test"]
+         :extra-deps  {nubank/matcher-combinators {:mvn/version "1.2.4"}}}}}
