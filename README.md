@@ -16,6 +16,10 @@ it will ouptut:
     └── Heading Final
 ```
 
+## Running tests
+
+`clj -A:test`
+
 ## Design
 My approach to this problem was to:
 
