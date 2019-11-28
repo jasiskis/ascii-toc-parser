@@ -1,6 +1,6 @@
-(ns allstreet-challenge.table-of-contents
+(ns ascii-toc-parser.table-of-contents
   (:require [clojure.string :as string]
-            [allstreet-challenge.logic :as logic]))
+            [ascii-toc-parser.logic :as logic]))
 
 (defn- render [heading]
   (str (:spacer heading) (:prefix heading) (:text heading)))

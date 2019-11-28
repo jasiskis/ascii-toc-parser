@@ -1,9 +1,11 @@
-# Heading -> Tree
+# Table of Contents to ASCII Tree parser
+
+Given a MD table of contents it prints a ASCII tree (like the `tree` command).
 
 ## Running the program
 
 ```
-cat example |  clj -m allstreet-challenge.main
+cat example |  clj -m ascii-toc-parser.main
 ```
 it will ouptut:
 ```

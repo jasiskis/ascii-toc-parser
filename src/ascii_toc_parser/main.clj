@@ -1,5 +1,5 @@
-(ns allstreet-challenge.main
-  (:require [allstreet-challenge.table-of-contents :as table-of-contents]))
+(ns ascii-toc-parser.main
+  (:require [ascii-toc-parser.table-of-contents :as table-of-contents]))
 
 
 (defn -main []

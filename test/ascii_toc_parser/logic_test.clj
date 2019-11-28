@@ -1,8 +1,8 @@
-(ns allstreet-challenge.logic-test
+(ns ascii-toc-parser.logic-test
   (:require [clojure.test :refer :all]
             [matcher-combinators.test]
             [matcher-combinators.matchers :as m]
-            [allstreet-challenge.logic :as logic]))
+            [ascii-toc-parser.logic :as logic]))
 
 (deftest parse-line-test
   (testing "one level heading"

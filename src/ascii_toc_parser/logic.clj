@@ -1,4 +1,4 @@
-(ns allstreet-challenge.logic
+(ns ascii-toc-parser.logic
   (:require [clojure.string :as string]))
 
 (def last-element-in-level "└── ")

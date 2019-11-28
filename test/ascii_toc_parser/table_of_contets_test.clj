@@ -1,8 +1,8 @@
-(ns allstreet-challenge.logic-test
+(ns ascii-toc-parser.logic-test
   (:require [clojure.test :refer :all]
             [matcher-combinators.test]
             [matcher-combinators.matchers :as m]
-            [allstreet-challenge.table-of-contents :as table-of-contents]))
+            [ascii-toc-parser.table-of-contents :as table-of-contents]))
 
 (def example
 "# Heading 1
