@@ -3,4 +3,6 @@
                   :extra-deps {com.cognitect/test-runner {:git/url "https://github.com/cognitect-labs/test-runner.git"
                                                           :sha "209b64504cb3bd3b99ecfec7937b358a879f55c1"}
                                nubank/matcher-combinators {:mvn/version "1.2.4"}}
-                  :main-opts ["-m" "cognitect.test-runner"]}}}
+                  :main-opts ["-m" "cognitect.test-runner"]}
+           :lint {:extra-deps {cljfmt {:mvn/version "0.6.6"}}
+                  :main-opts ["-m" "cljfmt.main"]}}}

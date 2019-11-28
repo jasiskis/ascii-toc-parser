@@ -22,6 +22,10 @@ it will ouptut:
 
 `clj -A:test`
 
+## Running Lint
+`clj -A:lint check` to verify the project
+`clj -A:lint fix` to automatically fix the issues
+
 ## Design
 My approach to this problem was to:
 

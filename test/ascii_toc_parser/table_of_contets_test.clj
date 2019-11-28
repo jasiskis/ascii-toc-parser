@@ -5,7 +5,7 @@
             [ascii-toc-parser.table-of-contents :as table-of-contents]))
 
 (def example
-"# Heading 1
+  "# Heading 1
 ## Heading 2
 ## Another Heading 2
 ### Heading 3
@@ -13,7 +13,7 @@
 ## Heading Final ")
 
 (def expected
-".
+  ".
 └── Heading 1
     ├── Heading 2
     ├── Another Heading 2
@@ -31,7 +31,7 @@
 # Heading")
 
 (def complex-expected
-".
+  ".
 ├── Heading 1
 │   │   │   └── Heading 4
 │   │   └── Heading 3

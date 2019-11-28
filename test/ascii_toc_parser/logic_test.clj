@@ -32,7 +32,7 @@
                 (logic/add-prefix {:level 2
                                    :text "heading 2"})))))
 
-(deftest add-spacer-test 
+(deftest add-spacer-test
   (testing "should not add space for level 1"
     (is (match? {:spacer ""}
                 (logic/add-spacer {:level 1
@@ -70,8 +70,8 @@
                  :open-parents []
                  :last-in-level false}
                 (logic/enrich-heading {:level 1} {:level 1
-                                               :last-in-level true
-                                               :open-parents []}))))
+                                                  :last-in-level true
+                                                  :open-parents []}))))
   (testing "last-heading should have level - 1 closed parents"
     (is (match? {:level 5
                  :open-parents [false false false false]
@@ -82,29 +82,29 @@
                  :open-parents [true false true true]
                  :last-in-level true}
                 (logic/enrich-heading {:level 5} {:level 4
-                                               :last-in-level true
-                                               :open-parents [true false true]}))))
+                                                  :last-in-level true
+                                                  :open-parents [true false true]}))))
   (testing "fill gap for current level greater than next"
     (is (match? {:level 5
                  :open-parents [true false true false]
                  :last-in-level true}
                 (logic/enrich-heading {:level 5} {:level 3
-                                               :last-in-level false 
-                                               :open-parents [true false]}))))
+                                                  :last-in-level false
+                                                  :open-parents [true false]}))))
   (testing "current level less than next-level with open parent"
     (is (match? {:level 3
                  :open-parents [true true]
                  :last-in-level false}
                 (logic/enrich-heading {:level 3} {:level 4
-                                               :last-in-level false 
-                                               :open-parents [true true true]}))))
+                                                  :last-in-level false
+                                                  :open-parents [true true true]}))))
   (testing "current level less than next-level wo open parent"
     (is (match? {:level 3
                  :open-parents [true true]
                  :last-in-level true}
                 (logic/enrich-heading {:level 3} {:level 4
-                                               :last-in-level false 
-                                               :open-parents [true true false]})))))
+                                                  :last-in-level false
+                                                  :open-parents [true true false]})))))
 
 ; # heading 1
 ; ## heading 2
@@ -112,7 +112,7 @@
 ; ### heading 3
 ; #### heading x
 ; ## heading final
-(def full-example 
+(def full-example
   [{:level 1}
    {:level 2}
    {:level 2}
@@ -128,4 +128,4 @@
                  {:level 3, :last-in-level true, :open-parents [false true]}
                  {:level 4, :last-in-level true, :open-parents [false true false]}
                  {:level 2, :last-in-level true, :open-parents [false]}]
-                 (logic/enrich-headings full-example)))))
+                (logic/enrich-headings full-example)))))
