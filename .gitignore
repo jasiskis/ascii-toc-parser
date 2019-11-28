@@ -11,3 +11,4 @@ pom.xml.asc
 .idea/
 .cpcache
 .clj-kondo/.cache
+.clj-kondo
